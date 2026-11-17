@@ -23,7 +23,7 @@ function getLocation(){
 
 
 function getTemp(lat, long, city, country){
-    const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=9a29889553bb4602a84174636262209&q=${lat},${long}`
+    const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=9a29889553bb4602a84174636262209&q=${lat},${long}`
 
     fetch(weatherUrl)
         .then(res => res.json())
